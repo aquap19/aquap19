@@ -20,36 +20,36 @@
 	top: 34px;
 }
 #apDiv2 {
-	position: absolute;
-	width: 725px;
-	height: 78px;
-	z-index: 5;
-	left: 210px;
-	top: 371px;
+    position: absolute;
+    width: 725px;
+    height: 78px;
+    z-index: 5;
+    left: 145px;
+    top: 371px;
 }
 #apDiv3 {
     position: absolute;
-    width: 70px;
-    height: 66px;
+    width: 45px;
+    height: 46px;
     z-index: 5;
-    left: 309px;
-    top: 130px;
+    left: 296px;
+    top: 139px;
 }
 #apDiv4 {
     position: absolute;
-    width: 65px;
-    height: 227px;
+    width: 43px;
+    height: 158px;
     z-index: 5;
-    left: 799px;
-    top: 33px;
+    left: 689px;
+    top: 85px;
 }
 #apDiv5 {
-	position: absolute;
-	width: 717px;
-	height: 75px;
-	z-index: 5;
-	left: 209px;
-	top: 539px;
+    position: absolute;
+    width: 717px;
+    height: 75px;
+    z-index: 5;
+    left: 144px;
+    top: 546px;
 }
 #apDiv6 {
 	position: absolute;
@@ -61,11 +61,11 @@
 }
 #apDiv7 {
     position: absolute;
-    width: 324px;
-    height: 56px;
+    width: 262px;
+    height: 46px;
     z-index: 1;
-    left: 417px;
-    top: 138px;
+    left: 386px;
+    top: 140px;
 }
 #apDiv8 {
     position: absolute;
@@ -100,12 +100,12 @@
 	top: -231px;
 }
 #apDiv12 {
-	position: absolute;
-	width: 727px;
-	height: 74px;
-	z-index: 5;
-	left: 210px;
-	top: 455px;
+    position: absolute;
+    width: 727px;
+    height: 74px;
+    z-index: 5;
+    left: 146px;
+    top: 459px;
 }
 #apDiv13 {
 	position: absolute;
@@ -128,7 +128,7 @@
     width: 218px;
     height: 75px;
     z-index: 9;
-    left: 209px;
+    left: 145px;
     top: 284px;
 }
 body {
@@ -157,16 +157,77 @@ body {
     top: 284px;
 }
 </style>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
 </head>
 
-<body>
-<div id="apDiv7"><img src="A.Index/patrice_stutz_aquarelles.png" width="300" height="53" alt=""/></div>
-<div id="apDiv2"><a href="Interieurs.html"><img src="A.Index/long_interieurs.jpg" width="723" height="71" alt="Interieurs" /></a></div>
-<div id="apDiv5"><a href="Divers.html"><img src="A.Index/long_divers.jpg" width="728" height="71" alt="Divers" /></a></div>
+<body onload="MM_preloadImages('A.Index/long_swap_paysages_urbains.jpg')">
+<div id="apDiv7"><img src="A.Index/patrice_stutz_aquarelles.png" width="259" height="45" alt=""/></div>
+<div id="apDiv2">
+  <a href="Interieurs.html">
+    <img src="A.Index/long_interieurs.jpg"
+         alt="Interieurs"
+         width="726"
+         height="71"
+         onmouseover="this.src='A.Index/long_swap_interieurs.jpg'"
+         onmouseout="this.src='A.Index/long_interieurs.jpg'">
+  </a>
+</div>
+<div id="apDiv5">
+  <a href="Divers.html">
+    <img src="A.Index/long_divers.jpg"
+         alt="Divers"
+         width="728"
+         height="71"
+         onmouseover="this.src='A.Index/long_swap_divers.jpg'"
+         onmouseout="this.src='A.Index/long_divers.jpg'">
+  </a>
+</div>
 <div id="apDiv9"></div>
-<div id="apDiv12"><a href="Landscapes.html"><img src="A.Index/long_paysages.jpg" width="726" height="71" alt="Paysages" /></a></div>
-<div id="apDiv15"><a href="Accueil.cityscapes.html"><img src="A.Index/long_paysages_urbains.jpg" width="725" height="71" alt="Paysages.Urbains" /></a></div>
-<div id="apDiv3"><img src="Signatures_Logos/logoP19carré_rouge.png" width="68" height="66" alt=""/></div>
-<div id="apDiv4"><img src="Signatures_Logos/signature_base_jaune.png" width="58" height="217" alt=""/></div>
+<div id="apDiv12">
+  <a href="Landscapes.html">
+    <img src="A.Index/long_paysages.jpg"
+         alt="Paysages"
+         width="726"
+         height="71"
+         onmouseover="this.src='A.Index/long_swap_paysages.jpg'"
+         onmouseout="this.src='A.Index/long_paysages.jpg'">
+  </a>
+</div>
+<div id="apDiv15">
+  <a href="Accueil.cityscapes.html">
+    <img id="imgPaysages"
+         src="A.Index/long_paysages_urbains.jpg"
+         alt="Paysages.Urbains"
+         width="725"
+         height="71"
+         onmouseover="MM_swapImage('imgPaysages','','A.Index/long_swap_paysages_urbains.jpg',1)"
+         onmouseout="MM_swapImgRestore()" />
+  </a>
+</div>
+<div id="apDiv3"><img src="Signatures_Logos/logoP19carré_rouge.png" width="48" height="46" alt=""/></div>
+<div id="apDiv4"><img src="Signatures_Logos/signature_base_jaune.png" width="41" height="153" alt=""/></div>
 </body>
 </html>
